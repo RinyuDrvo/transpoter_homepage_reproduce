@@ -4,5 +4,11 @@ module.exports = {
   output: {
     filename: "main.js"
   },
-  mode: "development"
+
+  mode: "development",
+
+  devServer: {
+    contentBase: "dist",
+    open: true
+  }
 };
