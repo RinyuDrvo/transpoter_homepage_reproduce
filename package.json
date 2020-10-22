@@ -1,0 +1,20 @@
+{
+  "name": "uber_copying_sutras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinyuDrvo/uber_copying_sutras.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RinyuDrvo/uber_copying_sutras/issues"
+  },
+  "homepage": "https://github.com/RinyuDrvo/uber_copying_sutras#readme"
+}
