@@ -22,6 +22,7 @@
   "homepage": "https://github.com/RinyuDrvo/uber_copying_sutras#readme",
   "devDependencies": {
     "@babel/core": "^7.12.3",
+    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "babel-loader": "^8.1.0",
     "webpack": "^5.2.0",
