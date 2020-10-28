@@ -1,30 +1,32 @@
-module.exports = {
-  entry: './src/index.js',
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+module.exports = {
+  mode: 'development',
+  entry: './src/main.ts',
   output: {
     filename: "main.js"
   },
-
-  mode: "development",
-
   devServer: {
-    contentBase: "dist",
+    contentBase: path.resolve(__dirname, 'public'),
     open: true
   },
-
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
+        test: /\.ts$/,
+        use: 'ts-loader',
       },
     ],
   },
-  target: ["web", "es5"],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'index.html'), // パスの指定
+    }),
+  ],
+  resolve: {
+    extensions: [
+      '.ts', '.js',
+    ],
+  },
 };
