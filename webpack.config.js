@@ -1,12 +1,9 @@
 module.exports = {
-  entry: './src/index.js',
-
+  mode: 'development',
+  entry: './src/main.ts',
   output: {
     filename: "main.js"
   },
-
-  mode: "development",
-
   devServer: {
     contentBase: "dist",
     open: true
@@ -24,7 +21,15 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+      },
     ],
   },
-  target: ["web", "es5"],
+  resolve: {
+    extensions: [
+      '.ts', '.js',
+    ],
+  },
 };
