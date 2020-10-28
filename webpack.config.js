@@ -1,3 +1,6 @@
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry: './src/main.ts',
@@ -5,7 +8,7 @@ module.exports = {
     filename: "main.js"
   },
   devServer: {
-    contentBase: "dist",
+    contentBase: path.resolve(__dirname, 'public'),
     open: true
   },
   module: {
@@ -16,6 +19,11 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'index.html'), // パスの指定
+    }),
+  ],
   resolve: {
     extensions: [
       '.ts', '.js',
