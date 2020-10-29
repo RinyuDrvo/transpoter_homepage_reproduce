@@ -6,10 +6,11 @@ const enabledSourceMap = MODE === "development";
 
 module.exports = {
   mode: MODE,
-  entry: './src/main.ts',
+  entry: './src/index.ts',
   output: {
     filename: "main.js",
-    path: path.join(__dirname, 'dist/asset')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[name][ext][query]'
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
@@ -43,8 +44,8 @@ module.exports = {
         ]
       },
       {
-        test: /\.(img|png|gif)$/,
-        loader: 'url-loader',
+        test: /\.png/,
+        type: 'asset/resource'
       }
     ],
   },
