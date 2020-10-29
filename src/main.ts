@@ -1,5 +1,6 @@
-import { hello } from "./sub";
 import "./style.scss";
 import img from './owl.png';
 
-hello();
+const imgOwl = document.createElement('img');
+imgOwl.src = img;
+document.getElementById('owl');
