@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { PollingWatchKind, isJSDocPublicTag } = require('typescript');
 const MODE = "development";
 const enabledSourceMap = MODE === "development";
 
@@ -7,7 +8,8 @@ module.exports = {
   mode: MODE,
   entry: './src/main.ts',
   output: {
-    filename: "main.js"
+    filename: "main.js",
+    path: path.join(__dirname, 'dist/asset')
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
@@ -37,8 +39,12 @@ module.exports = {
             options: {
               sourceMap: enabledSourceMap
             }
-          }
+          },
         ]
+      },
+      {
+        test: /\.(img|png|gif)$/,
+        loader: 'url-loader',
       }
     ],
   },
