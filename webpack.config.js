@@ -20,16 +20,24 @@ module.exports = {
         use: 'ts-loader',
       },
       {
-        test: /\.css/,
+        test: /\.scss/,
         use: [
           "style-loader",
-        {
-          loader: "css-loader",
-          options: {
-            url: false,
-            sourceMap: enabledSourceMap
+          {
+            loader: "css-loader",
+            options: {
+              url: false,
+              sourceMap: enabledSourceMap,
+              // sass-loaderを読み込む
+              importLoaders: 2
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: enabledSourceMap
+            }
           }
-        }
         ]
       }
     ],
@@ -44,4 +52,5 @@ module.exports = {
       '.ts', '.js',
     ],
   },
+  target: ["web", "es5"]
 };

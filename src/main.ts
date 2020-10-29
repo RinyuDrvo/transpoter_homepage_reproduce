@@ -1,4 +1,4 @@
 import { hello } from "./sub";
-import "./style.css";
+import "./style.scss";
 
 hello();
