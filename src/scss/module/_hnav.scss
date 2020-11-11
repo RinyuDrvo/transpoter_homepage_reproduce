@@ -1,0 +1,12 @@
+.nav {
+  background-color: black;
+  display: flex;
+  &__logo {
+
+    &--icon {
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+    }
+  }
+}
