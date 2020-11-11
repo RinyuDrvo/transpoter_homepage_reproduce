@@ -1,8 +1,10 @@
 .nav {
   background-color: black;
-  display: flex;
+  &__base {
+    display: flex;
+    padding: 12px 0;
+  }
   &__logo {
-
     &--icon {
       color: white;
       text-decoration: none;
