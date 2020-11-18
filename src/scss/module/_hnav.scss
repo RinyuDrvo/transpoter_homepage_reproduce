@@ -14,10 +14,21 @@
   }
   &__left-menu {
     display: flex;
+    align-items: center;
     margin: 0 24px;
     flex-grow: 1;
     &--element {
       padding: 10px 12px;
+      display: flex;
+      color: white;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      text-decoration: none;
+      font-size: 1rem;
     }
+  }
+  &__right-menu {
+    display: flex;
   }
 }
