@@ -1,14 +1,23 @@
 .nav {
   background-color: black;
+  padding: 12px 0;
   &__base {
     display: flex;
-    padding: 12px 0;
+    padding: 0 64px;
   }
   &__logo {
     &--icon {
       color: white;
       text-decoration: none;
       font-size: 2rem;
+    }
+  }
+  &__left-menu {
+    display: flex;
+    margin: 0 24px;
+    flex-grow: 1;
+    &--element {
+      padding: 10px 12px;
     }
   }
 }
