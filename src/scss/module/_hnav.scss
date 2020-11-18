@@ -1,8 +1,9 @@
 .nav {
   background-color: black;
+  padding: 12px 0;
   &__base {
     display: flex;
-    padding: 12px 0;
+    padding: 0 64px;
   }
   &__logo {
     &--icon {
