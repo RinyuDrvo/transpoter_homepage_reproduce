@@ -22,12 +22,16 @@
     &--element {
       padding: 10px 12px;
       display: flex;
+      align-items: center;
       color: white;
       background-color: transparent;
       border: none;
       outline: none;
       text-decoration: none;
       font-size: 1rem;
+    }
+    &--angle {
+      margin-left: 8px;
     }
   }
   &__right-menu {
