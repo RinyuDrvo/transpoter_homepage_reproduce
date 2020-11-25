@@ -32,5 +32,24 @@
   }
   &__right-menu {
     display: flex;
+    align-items: center;
+    &--element {
+      padding: 10px 12px;
+      display: flex;
+      color: white;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    &--button {
+      background-color: white;
+      color: black;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      padding: 10px 12px;
+    }
   }
 }
