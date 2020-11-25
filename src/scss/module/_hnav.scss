@@ -6,17 +6,50 @@
     padding: 0 64px;
   }
   &__logo {
+    display: flex;
+    align-items: center;
     &--icon {
       color: white;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   &__left-menu {
     display: flex;
+    align-items: center;
     margin: 0 24px;
     flex-grow: 1;
     &--element {
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    &--angle {
+      margin-left: 8px;
+    }
+  }
+  &__right-menu {
+    display: flex;
+    align-items: center;
+    &--element {
+      padding: 10px 12px;
+      display: flex;
+      color: white;
+      background-color: transparent;
+      border: none;
+      font-size: 1rem;
+    }
+    &--button {
+      background-color: white;
+      color: black;
+      border: none;
+      font-size: 1rem;
+      border-radius: 30px;
       padding: 10px 12px;
     }
   }
