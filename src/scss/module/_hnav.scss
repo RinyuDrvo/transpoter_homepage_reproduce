@@ -6,6 +6,8 @@
     padding: 0 64px;
   }
   &__logo {
+    display: flex;
+    align-items: center;
     &--icon {
       color: white;
       text-decoration: none;
