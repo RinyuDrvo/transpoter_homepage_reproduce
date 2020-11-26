@@ -43,6 +43,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
         test: /\.png/,
         type: 'asset/resource'
       }
@@ -50,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'html', 'index.html'), // パスの指定
+      template: path.resolve(__dirname, 'src', 'index.html'), // パスの指定
     }),
   ],
   resolve: {
