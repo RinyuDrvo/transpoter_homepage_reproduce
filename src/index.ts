@@ -1,6 +1,9 @@
 import "./scss/style.scss";
-import mainImage from './images/owl.png';
 
-const img = document.createElement('img');
-img.src = mainImage;
-console.log(img);
+const navComponent = require('./common/nav.html');
+const topComponent = require('./common/top.html')
+
+const nav = document.getElementById('nav');
+nav.innerHTML = navComponent;
+const top = document.getElementById('top');
+top.innerHTML = topComponent;
