@@ -5,12 +5,13 @@
   &__container {
     padding: 64px;
   }
-  &__tabs {
-    width: 100%;
-    display: flex;
-    background-color: #fff;
-  }
-  &__tab-list {
+}
+
+.tab-list {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  &__list-box {
     justify-content: space-around;
     align-items: center;
     display: flex;
@@ -19,21 +20,21 @@
     background-color: #fff;
     text-align: center;
     display: inline-block;
-    &--box {
-      width: 105px;
-      padding: 28px 12px 20px;
-    }
-    &--icon {
-      width: 24px;
-      height: 24px;
-      margin: 0 auto;
-    }
-    &--text {
-      height: 40px;
-      margin-top: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  }
+  &__tab-box {
+    width: 105px;
+    padding: 28px 12px 20px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+  }
+  &__text {
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
