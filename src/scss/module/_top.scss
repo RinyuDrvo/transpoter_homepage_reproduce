@@ -2,28 +2,27 @@
   background-color: orange;
   min-height: 760px;
   width: 100%;
+  min-width: 1140px;
   &__container {
     padding: 64px;
   }
 }
 
 .tab-list {
-  width: 100%;
-  display: flex;
   background-color: #fff;
-  &__list-box {
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-  }
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
   &__tab {
-    background-color: #fff;
     text-align: center;
     display: inline-block;
   }
   &__tab-box {
-    width: 105px;
-    padding: 28px 12px 20px;
+    width: 100px;
+    padding: 28px 6px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__icon {
     width: 24px;
@@ -33,8 +32,8 @@
   &__text {
     height: 40px;
     margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    width: 80px;
   }
 }
