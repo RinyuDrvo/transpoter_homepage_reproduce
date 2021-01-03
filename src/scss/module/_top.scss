@@ -2,6 +2,7 @@
   background-color: orange;
   min-height: 760px;
   width: 100%;
+  min-width: 1140px;
   &__container {
     padding: 64px;
   }
@@ -9,7 +10,7 @@
 
 .tab-list {
   background-color: #fff;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   &__tab {
@@ -17,8 +18,8 @@
     display: inline-block;
   }
   &__tab-box {
-    width: 105px;
-    padding: 28px 12px 20px;
+    width: 100px;
+    padding: 28px 6px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
