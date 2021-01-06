@@ -37,3 +37,40 @@
     width: 80px;
   }
 }
+
+.card-space {
+  &__card {
+    background-color: #fff;
+    width: 400px;
+    padding: 48px;
+  }
+  &__text {
+    &--title {
+      font-size: 52px;
+      font-weight: normal;
+      line-height: 64px;
+      margin-bottom: 24px;
+    }
+    &--default {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  &__link-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__button {
+    background-color: black;
+    padding: 14px 25px;
+    margin-bottom: 12px;
+    &--text {
+      color: #fff;
+    }
+  }
+  &__link {
+    padding-bottom: 6px;
+    border-bottom: solid 1px #ccc;
+  }
+}
