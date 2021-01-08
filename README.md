@@ -1,3 +1,3 @@
-# uber_copying_sutras
+# transpoter homepage reproduce
 
-これはUberホームページの写経用リポジトリです
+これは運送会社ホームページの写経学習用リポジトリです
